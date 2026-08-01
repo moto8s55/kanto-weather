@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KANTO WEATHER SYSTEM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #33ff66;
+    --green-dim: #14b84a;
+    --bg: #001505;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'DotGothic16', monospace;
+  }
+
+  .panel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 16px;
+    border: 2px solid var(--green);
+    border-radius: 4px;
+    background: var(--bg);
+    box-shadow:
+      0 0 8px rgba(51, 255, 102, 0.5),
+      inset 0 0 30px rgba(51, 255, 102, 0.08);
+    overflow: hidden;
+  }
+
+  /* CRT scanline overlay */
+  .panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 2px,
+      rgba(0, 0, 0, 0.25) 3px
+    );
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 16px 4px;
+    color: var(--green);
+    text-shadow: 0 0 6px var(--green);
+  }
+
+  .header .title {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .header .version {
+    font-size: 12px;
+    color: var(--green-dim);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px dashed var(--green-dim);
+    margin: 4px 16px 8px;
+    opacity: 0.7;
+  }
+
+  .marquee-wrap {
+    position: relative;
+    overflow: hidden;
+    padding: 18px 0;
+    white-space: nowrap;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: scroll linear infinite;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    padding-right: 0;
+    font-size: 26px;
+    color: var(--green);
+    text-shadow: 0 0 8px var(--green), 0 0 2px var(--green);
+    letter-spacing: 1px;
+  }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 16px 12px;
+    font-size: 12px;
+    color: var(--green-dim);
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: var(--green);
+    margin-left: 4px;
+    animation: blink 1s steps(1) infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="panel">
+  <div class="header">
+    <span class="title">KANTO WEATHER SYSTEM</span>
+    <span class="version">v1.0</span>
+  </div>
+  <hr class="divider">
+
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+      <span class="marquee-content" id="content1">天気情報を取得中...</span>
+      <span class="marquee-content" id="content2" aria-hidden="true">天気情報を取得中...</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <div class="footer">
+    <span id="statusText">SYSTEM READY</span>
+    <span id="clockText">--:--:--<span class="cursor"></span></span>
+  </div>
+</div>
+
+<script>
+const CITIES = {
+  "東京都":   [35.6895, 139.6917],
+  "神奈川県": [35.4478, 139.6425],
+  "千葉県":   [35.6047, 140.1233],
+  "埼玉県":   [35.8617, 139.6455],
+};
+
+const WEATHER_CODE_JA = {
+  0: "快晴", 1: "晴れ", 2: "一部曇り", 3: "曇り",
+  45: "霧", 48: "霧氷",
+  51: "小雨(弱)", 53: "小雨", 55: "強い小雨",
+  56: "着氷性の霧雨(弱)", 57: "着氷性の霧雨(強)",
+  61: "小雨", 63: "雨", 65: "大雨",
+  66: "着氷性の雨(弱)", 67: "着氷性の雨(強)",
+  71: "小雪", 73: "雪", 75: "大雪", 77: "霧雪",
+  80: "にわか雨(弱)", 81: "にわか雨", 82: "激しいにわか雨",
+  85: "にわか雪(弱)", 86: "にわか雪(強)",
+  95: "雷雨", 96: "雷雨(ひょう弱)", 99: "雷雨(ひょう強)",
+};
+
+const SEPARATOR = "　　★　　";
+const SPEED_PX_PER_SEC = 90;      // 流れる速さ
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000; // データ更新間隔(5分)
+
+function weatherCodeToJa(code) {
+  return WEATHER_CODE_JA[code] ?? `不明(${code})`;
+}
+
+async function fetchWeather(lat, lon) {
+  const url = new URL("https://api.open-meteo.com/v1/forecast");
+  url.searchParams.set("latitude", lat);
+  url.searchParams.set("longitude", lon);
+  url.searchParams.set("current_weather", "true");
+  url.searchParams.set("hourly", "precipitation_probability");
+  url.searchParams.set("timezone", "Asia/Tokyo");
+
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+function getCurrentPrecipProbability(data) {
+  const currentHour = data.current_weather.time.slice(0, 13); // "YYYY-MM-DDTHH"
+  const times = data.hourly.time;
+  const probs = data.hourly.precipitation_probability;
+  for (let i = 0; i < times.length; i++) {
+    if (times[i].slice(0, 13) === currentHour) return probs[i];
+  }
+  return null;
+}
+
+async function buildDisplayText() {
+  const parts = [];
+  for (const [cityName, [lat, lon]] of Object.entries(CITIES)) {
+    try {
+      const data = await fetchWeather(lat, lon);
+      const current = data.current_weather;
+      const weatherJa = weatherCodeToJa(current.weathercode);
+      const precip = getCurrentPrecipProbability(data);
+      const precipText = precip !== null ? `${precip}%` : "不明";
+      parts.push(
+        `${cityName}　${weatherJa}　気温${current.temperature}℃　降水確率${precipText}`
+      );
+    } catch (e) {
+      parts.push(`${cityName}　データ取得エラー`);
+    }
+  }
+  return parts.join(SEPARATOR) + SEPARATOR;
+}
+
+function setMarqueeSpeed(track, content1) {
+  const width = content1.getBoundingClientRect().width;
+  const duration = width / SPEED_PX_PER_SEC;
+  track.style.animationDuration = `${duration}s`;
+}
+
+async function refreshDisplay() {
+  const statusText = document.getElementById("statusText");
+  statusText.textContent = "更新中...";
+
+  const text = await buildDisplayText();
+
+  const content1 = document.getElementById("content1");
+  const content2 = document.getElementById("content2");
+  content1.textContent = text;
+  content2.textContent = text;
+
+  const track = document.getElementById("marqueeTrack");
+  setMarqueeSpeed(track, content1);
+
+  statusText.textContent = "SYSTEM READY";
+}
+
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, "0");
+  const m = String(now.getMinutes()).padStart(2, "0");
+  const s = String(now.getSeconds()).padStart(2, "0");
+  document.getElementById("clockText").firstChild.textContent = `${h}:${m}:${s}`;
+}
+
+refreshDisplay();
+setInterval(refreshDisplay, REFRESH_INTERVAL_MS);
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+</body>
+</html>
