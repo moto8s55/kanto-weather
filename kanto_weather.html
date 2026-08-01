@@ -34,8 +34,8 @@
   .panel {
     position: relative;
     width: 100%;
-    max-width: 640px;
-    margin: 8px;
+    max-width: 320px;
+    margin: 6px;
     border: 1px solid var(--green);
     border-radius: 3px;
     background: var(--bg);
@@ -64,32 +64,32 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 6px 10px 2px;
+    padding: 3px 6px 1px;
     color: var(--green);
-    text-shadow: 0 0 4px var(--green);
+    text-shadow: 0 0 2px var(--green);
   }
 
   .header .title {
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 8px;
+    letter-spacing: 0.5px;
   }
 
   .header .version {
-    font-size: 9px;
+    font-size: 6px;
     color: var(--green-dim);
   }
 
   .divider {
     border: none;
     border-top: 1px dashed var(--green-dim);
-    margin: 2px 10px 4px;
+    margin: 1px 6px 2px;
     opacity: 0.7;
   }
 
   .marquee-wrap {
     position: relative;
     overflow: hidden;
-    padding: 9px 0;
+    padding: 4px 0;
     white-space: nowrap;
   }
 
@@ -103,10 +103,10 @@
   .marquee-content {
     display: inline-block;
     padding-right: 0;
-    font-size: 15px;
+    font-size: 9px;
     color: var(--green);
-    text-shadow: 0 0 5px var(--green), 0 0 1px var(--green);
-    letter-spacing: 0.5px;
+    text-shadow: 0 0 3px var(--green), 0 0 1px var(--green);
+    letter-spacing: 0.3px;
   }
 
   @keyframes scroll {
@@ -117,17 +117,17 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 3px 10px 7px;
-    font-size: 9px;
+    padding: 2px 6px 4px;
+    font-size: 6px;
     color: var(--green-dim);
   }
 
   .cursor {
     display: inline-block;
-    width: 5px;
-    height: 9px;
+    width: 3px;
+    height: 6px;
     background: var(--green);
-    margin-left: 3px;
+    margin-left: 2px;
     animation: blink 1s steps(1) infinite;
     vertical-align: middle;
   }
