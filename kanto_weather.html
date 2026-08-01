@@ -34,14 +34,14 @@
   .panel {
     position: relative;
     width: 100%;
-    max-width: 900px;
-    margin: 16px;
-    border: 2px solid var(--green);
-    border-radius: 4px;
+    max-width: 640px;
+    margin: 8px;
+    border: 1px solid var(--green);
+    border-radius: 3px;
     background: var(--bg);
     box-shadow:
-      0 0 8px rgba(51, 255, 102, 0.5),
-      inset 0 0 30px rgba(51, 255, 102, 0.08);
+      0 0 6px rgba(51, 255, 102, 0.5),
+      inset 0 0 20px rgba(51, 255, 102, 0.08);
     overflow: hidden;
   }
 
@@ -64,32 +64,32 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 10px 16px 4px;
+    padding: 6px 10px 2px;
     color: var(--green);
-    text-shadow: 0 0 6px var(--green);
+    text-shadow: 0 0 4px var(--green);
   }
 
   .header .title {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 13px;
+    letter-spacing: 1px;
   }
 
   .header .version {
-    font-size: 12px;
+    font-size: 9px;
     color: var(--green-dim);
   }
 
   .divider {
     border: none;
     border-top: 1px dashed var(--green-dim);
-    margin: 4px 16px 8px;
+    margin: 2px 10px 4px;
     opacity: 0.7;
   }
 
   .marquee-wrap {
     position: relative;
     overflow: hidden;
-    padding: 18px 0;
+    padding: 9px 0;
     white-space: nowrap;
   }
 
@@ -103,10 +103,10 @@
   .marquee-content {
     display: inline-block;
     padding-right: 0;
-    font-size: 26px;
+    font-size: 15px;
     color: var(--green);
-    text-shadow: 0 0 8px var(--green), 0 0 2px var(--green);
-    letter-spacing: 1px;
+    text-shadow: 0 0 5px var(--green), 0 0 1px var(--green);
+    letter-spacing: 0.5px;
   }
 
   @keyframes scroll {
@@ -117,17 +117,17 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 6px 16px 12px;
-    font-size: 12px;
+    padding: 3px 10px 7px;
+    font-size: 9px;
     color: var(--green-dim);
   }
 
   .cursor {
     display: inline-block;
-    width: 8px;
-    height: 14px;
+    width: 5px;
+    height: 9px;
     background: var(--green);
-    margin-left: 4px;
+    margin-left: 3px;
     animation: blink 1s steps(1) infinite;
     vertical-align: middle;
   }
