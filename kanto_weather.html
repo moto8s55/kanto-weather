@@ -186,6 +186,10 @@ const SEPARATOR = "　　★　　";
 const SPEED_PX_PER_SEC = 90;      // 流れる速さ
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000; // データ更新間隔(5分)
 
+const NHK_RSS_URL = "https://www3.nhk.or.jp/rss/news/cat0.xml";
+const NEWS_ITEM_COUNT = 8;
+const TRAIN_JSON_URL = "./train.json";
+
 function weatherCodeToJa(code) {
   return WEATHER_CODE_JA[code] ?? `不明(${code})`;
 }
@@ -213,7 +217,7 @@ function getCurrentPrecipProbability(data) {
   return null;
 }
 
-async function buildDisplayText() {
+async function buildWeatherParts() {
   const parts = [];
   for (const [cityName, [lat, lon]] of Object.entries(CITIES)) {
     try {
@@ -229,6 +233,53 @@ async function buildDisplayText() {
       parts.push(`${cityName}　データ取得エラー`);
     }
   }
+  return parts;
+}
+
+async function fetchNewsParts() {
+  try {
+    const res = await fetch(NHK_RSS_URL);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const xmlText = await res.text();
+    const doc = new DOMParser().parseFromString(xmlText, "application/xml");
+    const titles = Array.from(doc.querySelectorAll("item > title"))
+      .slice(0, NEWS_ITEM_COUNT)
+      .map((el) => el.textContent.trim());
+
+    if (titles.length === 0) throw new Error("no items");
+    return titles.map((title) => `NEWS　${title}`);
+  } catch (e) {
+    return ["NEWS　ニュース取得エラー"];
+  }
+}
+
+async function fetchTrainParts() {
+  try {
+    const res = await fetch(TRAIN_JSON_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const lines = data.lines || [];
+
+    if (lines.length === 0) {
+      return ["運行情報　都心主要路線　平常運転"];
+    }
+    return lines.map(({ operator, railway, text }) => {
+      const label = railway ? `${operator}　${railway}` : operator;
+      return `運行情報　${label}　${text}`;
+    });
+  } catch (e) {
+    return ["運行情報　取得エラー"];
+  }
+}
+
+async function buildDisplayText() {
+  const [weatherParts, newsParts, trainParts] = await Promise.all([
+    buildWeatherParts(),
+    fetchNewsParts(),
+    fetchTrainParts(),
+  ]);
+
+  const parts = [...weatherParts, ...newsParts, ...trainParts];
   return parts.join(SEPARATOR) + SEPARATOR;
 }
 

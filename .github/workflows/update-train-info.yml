@@ -1,0 +1,32 @@
+name: Update train information
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch ODPT train information
+        env:
+          ODPT_API_KEY: ${{ secrets.ODPT_API_KEY }}
+        run: python3 scripts/fetch_train_info.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet train.json; then
+            echo "No changes"
+          else
+            git add train.json
+            git commit -m "Update train information"
+            git push
+          fi
