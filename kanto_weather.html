@@ -157,6 +157,7 @@
   <hr class="divider">
   <div class="footer">
     <span id="statusText">SYSTEM READY</span>
+    <span id="lastUpdatedText">更新: --</span>
     <span id="clockText">--:--:--<span class="cursor"></span></span>
   </div>
 </div>
@@ -261,7 +262,7 @@ async function fetchTrainParts() {
     const lines = data.lines || [];
 
     if (lines.length === 0) {
-      return ["運行情報　都心主要路線　平常運転"];
+      return ["運行情報　首都圏主要路線　平常運転"];
     }
     return lines.map(({ operator, railway, text }) => {
       const label = railway ? `${operator}　${railway}` : operator;
@@ -289,6 +290,8 @@ function setMarqueeSpeed(track, content1) {
   track.style.animationDuration = `${duration}s`;
 }
 
+let lastUpdatedAt = null;
+
 async function refreshDisplay() {
   const statusText = document.getElementById("statusText");
   statusText.textContent = "更新中...";
@@ -304,6 +307,18 @@ async function refreshDisplay() {
   setMarqueeSpeed(track, content1);
 
   statusText.textContent = "SYSTEM READY";
+  lastUpdatedAt = new Date();
+  updateLastUpdatedText();
+}
+
+function updateLastUpdatedText() {
+  const el = document.getElementById("lastUpdatedText");
+  if (!lastUpdatedAt) {
+    el.textContent = "更新: --";
+    return;
+  }
+  const diffMin = Math.floor((Date.now() - lastUpdatedAt.getTime()) / 60000);
+  el.textContent = diffMin < 1 ? "更新: たった今" : `更新: ${diffMin}分前`;
 }
 
 function updateClock() {
@@ -317,6 +332,7 @@ function updateClock() {
 refreshDisplay();
 setInterval(refreshDisplay, REFRESH_INTERVAL_MS);
 setInterval(updateClock, 1000);
+setInterval(updateLastUpdatedText, 15000);
 updateClock();
 </script>
 
