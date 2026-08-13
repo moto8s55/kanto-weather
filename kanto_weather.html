@@ -187,8 +187,7 @@ const SEPARATOR = "　　★　　";
 const SPEED_PX_PER_SEC = 90;      // 流れる速さ
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000; // データ更新間隔(5分)
 
-const NHK_RSS_URL = "https://www3.nhk.or.jp/rss/news/cat0.xml";
-const NEWS_ITEM_COUNT = 8;
+const NEWS_JSON_URL = "./news.json";
 const TRAIN_JSON_URL = "./train.json";
 
 function weatherCodeToJa(code) {
@@ -239,13 +238,10 @@ async function buildWeatherParts() {
 
 async function fetchNewsParts() {
   try {
-    const res = await fetch(NHK_RSS_URL);
+    const res = await fetch(NEWS_JSON_URL, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const xmlText = await res.text();
-    const doc = new DOMParser().parseFromString(xmlText, "application/xml");
-    const titles = Array.from(doc.querySelectorAll("item > title"))
-      .slice(0, NEWS_ITEM_COUNT)
-      .map((el) => el.textContent.trim());
+    const data = await res.json();
+    const titles = data.titles || [];
 
     if (titles.length === 0) throw new Error("no items");
     return titles.map((title) => `NEWS　${title}`);

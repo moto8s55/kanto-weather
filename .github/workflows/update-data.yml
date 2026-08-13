@@ -1,4 +1,4 @@
-name: Update train information
+name: Update data
 
 on:
   schedule:
@@ -19,14 +19,17 @@ jobs:
           ODPT_API_KEY: ${{ secrets.ODPT_API_KEY }}
         run: python3 scripts/fetch_train_info.py
 
+      - name: Fetch news headlines
+        run: python3 scripts/fetch_news.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet train.json; then
+          if git diff --quiet train.json news.json; then
             echo "No changes"
           else
-            git add train.json
-            git commit -m "Update train information"
+            git add train.json news.json
+            git commit -m "Update train and news data"
             git push
           fi
