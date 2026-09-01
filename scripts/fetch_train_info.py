@@ -112,7 +112,11 @@ def fetch_operator(operator_id):
         "acl:consumerKey": API_KEY,
     }
     url = "https://api.odpt.org/api/v4/odpt:TrainInformation?" + urllib.parse.urlencode(params)
-    with urllib.request.urlopen(url, timeout=15) as res:
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; kanto-weather-bot/1.0)"},
+    )
+    with urllib.request.urlopen(req, timeout=15) as res:
         return json.loads(res.read().decode("utf-8"))
 
 
