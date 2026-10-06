@@ -122,6 +122,26 @@
     color: var(--green-dim);
   }
 
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    padding: 1px 8px 4px;
+    font-size: 8px;
+    position: relative;
+    z-index: 3; /* スキャンライン層より上に置いてクリックできるようにする */
+  }
+
+  .links .label { color: var(--green-dim); }
+
+  .links a {
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--green-dim);
+  }
+
+  .links a:hover { text-shadow: 0 0 4px var(--green); }
+
   .cursor {
     display: inline-block;
     width: 4px;
@@ -152,6 +172,19 @@
       <span class="marquee-content" id="content1">天気情報を取得中...</span>
       <span class="marquee-content" id="content2" aria-hidden="true">天気情報を取得中...</span>
     </div>
+  </div>
+
+  <div class="links">
+    <span class="label">運行情報(公式):</span>
+    <a href="https://traininfo.jreast.co.jp/train_info/kanto.aspx" target="_blank" rel="noopener noreferrer">JR東日本</a>
+    <a href="https://traininfo.odakyu-rt.jp/train_status" target="_blank" rel="noopener noreferrer">小田急</a>
+    <a href="https://www.keio.co.jp/unkou/unkou_pc.html" target="_blank" rel="noopener noreferrer">京王</a>
+    <a href="https://unkou.keikyu.co.jp/" target="_blank" rel="noopener noreferrer">京急</a>
+    <a href="https://www.keisei.co.jp/traininfo/index.php" target="_blank" rel="noopener noreferrer">京成</a>
+    <a href="https://www.seiburailway.jp/railway/railwayinfo/" target="_blank" rel="noopener noreferrer">西武</a>
+    <a href="https://www.tobu.co.jp/service_status/" target="_blank" rel="noopener noreferrer">東武</a>
+    <a href="https://traininfo.tokyu.co.jp/" target="_blank" rel="noopener noreferrer">東急</a>
+    <a href="https://www.sotetsu.co.jp/train/" target="_blank" rel="noopener noreferrer">相鉄</a>
   </div>
 
   <hr class="divider">
@@ -287,7 +320,11 @@ async function buildDisplayText() {
     fetchTrainParts(),
   ]);
 
-  const parts = [...weatherParts, ...newsParts, ...trainParts];
+  const noticeParts = [
+    "運行情報　JR東日本・私鉄各線は下のリンクから公式サイトでご確認ください",
+    "データ提供：公共交通オープンデータセンター",
+  ];
+  const parts = [...weatherParts, ...newsParts, ...trainParts, ...noticeParts];
   return parts.join(SEPARATOR) + SEPARATOR;
 }
 
