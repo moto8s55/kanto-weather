@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -103,21 +104,31 @@ RAILWAY_NAMES = {
 }
 
 # このキーワードを含む場合は「平常運転」とみなして表示しない
-NORMAL_KEYWORDS = ["平常"]
+NORMAL_KEYWORDS = ["平常", "遅延はありません", "通常どおり", "通常通り"]
+
+# キー不要の公開用エンドポイントで取得できる事業者(都営は「現在、15分以上の遅延はありません。」を返す)
+PUBLIC_OPERATORS = {"odpt.Operator:Toei"}
 
 
 def fetch_operator(operator_id):
-    params = {
-        "odpt:operator": operator_id,
-        "acl:consumerKey": API_KEY,
-    }
-    url = "https://api.odpt.org/api/v4/odpt:TrainInformation?" + urllib.parse.urlencode(params)
+    if operator_id in PUBLIC_OPERATORS:
+        url = "https://api-public.odpt.org/api/v4/odpt:TrainInformation?" + urllib.parse.urlencode(
+            {"odpt:operator": operator_id}
+        )
+    else:
+        params = {"odpt:operator": operator_id, "acl:consumerKey": API_KEY}
+        url = "https://api.odpt.org/api/v4/odpt:TrainInformation?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(
         url,
         headers={"User-Agent": "Mozilla/5.0 (compatible; kanto-weather-bot/1.0)"},
     )
-    with urllib.request.urlopen(req, timeout=15) as res:
-        return json.loads(res.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=15) as res:
+            return json.loads(res.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        # 原因切り分け用に応答本文を出す(キーはURLにのみ含まれ、本文には含まれない)
+        body = e.read().decode("utf-8", errors="replace")[:200]
+        raise RuntimeError(f"HTTP {e.code} body={body!r}") from e
 
 
 def railway_display_name(railway_id):
