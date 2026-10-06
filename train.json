@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:22:18.064622+09:00",
+  "generated_at": "2026-10-07T01:04:17.557608+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,13 +8,48 @@
   "lines": [
     {
       "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "丸ノ内線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "東西線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
       "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "副都心線",
-      "text": "12時38分頃、東急東横線 白楽～妙蓮寺駅間で踏切安全確認のため、ダイヤが乱れています。"
+      "text": "ただいまの時間は運行を終了しております。"
     }
   ]
 }
