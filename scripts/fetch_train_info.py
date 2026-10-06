@@ -140,6 +140,7 @@ def railway_display_name(railway_id):
 
 def main():
     lines = []
+    covered = []  # データが実際に返ってきた事業者(空配列の事業者は未提供とみなす)
 
     for operator_id in OPERATORS:
         try:
@@ -147,6 +148,9 @@ def main():
         except Exception as e:
             print(f"WARN: failed to fetch {operator_id}: {e}", file=sys.stderr)
             continue
+
+        if entries:
+            covered.append(operator_id.split(":", 1)[-1])
 
         for entry in entries:
             text = (entry.get("odpt:trainInformationText") or {}).get("ja", "").strip()
@@ -162,6 +166,7 @@ def main():
     jst = timezone(timedelta(hours=9))
     output = {
         "generated_at": datetime.now(jst).isoformat(),
+        "covered": covered,
         "lines": lines,
     }
 
