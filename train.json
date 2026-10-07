@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:34:13.178157+09:00",
+  "generated_at": "2026-10-08T04:30:01.357200+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,18 +8,53 @@
   "lines": [
     {
       "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
       "railway": "丸ノ内線",
-      "text": "18時09分頃、西新宿駅でドア点検のため、ダイヤが乱れています。"
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "MarunouchiBranch",
-      "text": "18時09分頃、西新宿駅でドア点検のため、ダイヤが乱れています。"
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "東西線",
-      "text": "16時35分頃、日本橋駅でドア点検のため、ダイヤが乱れています。 この影響で西船橋方面への快速運転を中止しています。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、小田急線、京成線、西武線、りんかい線、つくばエクスプレス線、北総線に振替輸送を実施しています。"
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "ただいまの時間は運行を終了しております。"
     }
   ]
 }
