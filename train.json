@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:28:08.221270+09:00",
+  "generated_at": "2026-10-09T07:20:13.365520+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,53 +8,13 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
       "railway": "日比谷線",
-      "text": "ただいまの時間は運行を終了しております。"
+      "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "東西線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "ただいまの時間は運行を終了しております。"
+      "text": "一部の列車に遅れが出ています。"
     }
   ]
 }
