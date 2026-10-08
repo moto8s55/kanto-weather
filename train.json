@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T08:44:02.362485+09:00",
+  "generated_at": "2026-10-08T11:59:51.743844+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,28 +8,23 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
       "railway": "銀座線",
       "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
       "railway": "半蔵門線",
-      "text": "一部の列車に遅れが出ています。"
+      "text": "7時17分頃、東急田園都市線 つきみ野駅で車両ドア点検のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "7時13分頃、西武池袋線 所沢～西所沢駅間で踏切安全確認のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TWR",
+      "railway": "りんかい線",
+      "text": "遅れがでています。これは、JR線内で発生した線路に人立入りの影響です。"
     }
   ]
 }
