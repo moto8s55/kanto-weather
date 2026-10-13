@@ -1,20 +1,9 @@
 {
-  "generated_at": "2026-10-13T10:25:58.144179+09:00",
+  "generated_at": "2026-10-13T17:08:59.810984+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "都営新宿線",
-      "text": "新宿線は、08時08分頃、瑞江駅にて発生した信号確認のため、ダイヤが乱れています。振替輸送を実施しています。"
-    }
-  ]
+  "lines": []
 }
