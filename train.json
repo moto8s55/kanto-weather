@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T06:00:37.525141+09:00",
+  "generated_at": "2026-10-14T09:15:03.308169+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,13 +8,28 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "5時42分頃、後楽園駅でお客様救護のため、一部の列車に遅れが出ています。"
+      "railway": "東西線",
+      "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "5時42分頃、後楽園駅でお客様救護のため、一部の列車に遅れが出ています。"
+      "railway": "千代田線",
+      "text": "6時25分頃、小田急江ノ島線 藤沢本町～藤沢駅間で人身事故のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "8時31分頃、有楽町駅でドア点検のため、遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "7時43分頃、東大前駅で車両ドア点検のため、一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
     }
   ]
 }
