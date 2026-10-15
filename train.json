@@ -1,35 +1,9 @@
 {
-  "generated_at": "2026-10-15T18:58:43.078502+09:00",
+  "generated_at": "2026-10-15T23:49:20.593682+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "17時22分頃、中野駅で車両点検のため、一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "17時44分頃、豊洲駅で荷物挟まりのため、一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    }
-  ]
+  "lines": []
 }
