@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T12:18:06.279404+09:00",
+  "generated_at": "2026-10-16T17:19:01.282935+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -7,14 +7,9 @@
   ],
   "lines": [
     {
-      "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "8時23分頃、東陽町駅で安全確認のため、ダイヤが乱れています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "7時24分頃、東武スカイツリーライン 春日部駅で踏切安全確認のため、ダイヤが乱れています。"
+      "operator": "Toei",
+      "railway": "Arakawa",
+      "text": "東京さくらトラム（都電荒川線）は、お客様混雑のため、ダイヤが乱れています。"
     }
   ]
 }
