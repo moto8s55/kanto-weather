@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:20:54.306906+09:00",
+  "generated_at": "2026-10-17T02:32:34.510544+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,13 +8,53 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "一部の列車に遅れが出ています。"
+      "railway": "銀座線",
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
-      "operator": "Toei",
-      "railway": "都営浅草線",
-      "text": "浅草線は、18時47分頃、京成成田スカイアクセス線内にて発生した人身事故のため、ダイヤが乱れています。振替輸送を実施しています。"
+      "operator": "TokyoMetro",
+      "railway": "丸ノ内線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "東西線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "ただいまの時間は運行を終了しております。"
     }
   ]
 }
