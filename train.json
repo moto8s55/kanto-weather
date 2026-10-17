@@ -1,11 +1,21 @@
 {
-  "generated_at": "2026-10-17T14:04:25.119362+09:00",
+  "generated_at": "2026-10-17T18:15:10.905178+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
   "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "18時00分頃、桜田門駅で停止位置修正のため、一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    },
     {
       "operator": "Toei",
       "railway": "Arakawa",
