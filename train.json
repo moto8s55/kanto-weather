@@ -1,9 +1,35 @@
 {
-  "generated_at": "2026-10-17T07:46:03.181399+09:00",
+  "generated_at": "2026-10-17T09:48:46.897356+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "Toei",
+      "railway": "都営三田線",
+      "text": "三田線は、07時15分頃、東急線内にて発生した車内安全確認のため、目黒駅方面行列車のダイヤが乱れています。"
+    },
+    {
+      "operator": "TWR",
+      "railway": "りんかい線",
+      "text": "遅れがでています。これは、JR線内で発生した線路に人立入りの影響です。"
+    }
+  ]
 }
