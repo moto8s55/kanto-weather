@@ -1,21 +1,11 @@
 {
-  "generated_at": "2026-10-18T09:36:51.776714+09:00",
+  "generated_at": "2026-10-18T14:06:32.337350+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
   "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "一部の列車に遅れが出ています。"
-    },
     {
       "operator": "TokyoMetro",
       "railway": "有楽町線",
