@@ -1,45 +1,9 @@
 {
-  "generated_at": "2026-10-19T10:32:01.036264+09:00",
+  "generated_at": "2026-10-19T15:44:07.015733+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "7時55分頃、虎ノ門ヒルズ駅で停止位置修正のため、ダイヤが乱れています。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、東急線、小田急線、東武線、京成線、りんかい線、つくばエクスプレス線、北総線に振替輸送を実施しています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "7時55分頃、日比谷線内で停止位置修正のため、ダイヤが乱れています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "都営浅草線",
-      "text": "浅草線は、06時57分頃、京急線内にて発生した踏切安全確認のため、ダイヤが乱れています。振替輸送を実施しています。"
-    }
-  ]
+  "lines": []
 }
