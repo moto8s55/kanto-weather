@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T04:47:30.876748+09:00",
+  "generated_at": "2026-10-20T08:08:16.599704+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,48 +8,23 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
       "railway": "東西線",
-      "text": "ただいまの時間は運行を終了しております。"
+      "text": "7時43分頃、早稲田駅で、お客様トラブルのため、全線で運転を見合わせています。 運転再開は8時10分頃を見込んでいます。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、小田急線、京成線、西武線、りんかい線、つくばエクスプレス線、北総線に振替輸送を実施しています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "有楽町線",
-      "text": "ただいまの時間は運行を終了しております。"
+      "text": "一部の列車に遅れが出ています。"
     },
     {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "ただいまの時間は運行を終了しております。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "ただいまの時間は運行を終了しております。"
+      "operator": "TWR",
+      "railway": "りんかい線",
+      "text": "遅れが出ています。一部の列車でJR埼京線との直通運転を中止しています。これは、JR線内～川越線南古谷～指扇間で発生した踏切安全確認の影響です。"
     }
   ]
 }
