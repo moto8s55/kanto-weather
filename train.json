@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-10-21T05:41:41.822407+09:00",
+  "generated_at": "2026-10-21T08:25:27.667939+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "8時06分頃、表参道駅で荷物挟まりのため、一部の列車に遅れが出ています。"
+    }
+  ]
 }
