@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-10-22T10:57:39.998269+09:00",
+  "generated_at": "2026-10-22T16:20:55.436289+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    }
-  ]
+  "lines": []
 }
