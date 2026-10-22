@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-10-22T16:20:55.436289+09:00",
+  "generated_at": "2026-10-22T22:03:21.699549+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "19時20分頃、末広町駅で安全確認のため、ダイヤが乱れています。"
+    }
+  ]
 }
