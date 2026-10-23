@@ -1,25 +1,9 @@
 {
-  "generated_at": "2026-10-23T18:31:46.746439+09:00",
+  "generated_at": "2026-10-23T23:22:38.547207+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "17時25分頃、新富町駅でお客様トラブルのため、遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    }
-  ]
+  "lines": []
 }
