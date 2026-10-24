@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T13:22:32.998003+09:00",
+  "generated_at": "2026-10-24T17:58:35.711551+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,13 +8,13 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "副都心線",
+      "railway": "丸ノ内線",
       "text": "一部の列車に遅れが出ています。"
     },
     {
-      "operator": "Toei",
-      "railway": "Arakawa",
-      "text": "東京さくらトラム（都電荒川線）は、お客様混雑のため、ダイヤが乱れています。"
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "一部の列車に遅れが出ています。"
     }
   ]
 }
