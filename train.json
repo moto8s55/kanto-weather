@@ -1,9 +1,40 @@
 {
-  "generated_at": "2026-10-26T06:39:20.959661+09:00",
+  "generated_at": "2026-10-26T08:32:49.962400+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "7時25分頃、東武スカイツリーライン 小菅～五反野駅間で車両点検のため、ダイヤが乱れています。 この影響で女性専用車両を中止しています。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、東急線、小田急線、東武線、京成線、りんかい線、つくばエクスプレス線、北総線に振替輸送を実施しています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "7時25分頃、東武スカイツリーライン 小菅～五反野駅間で車両点検のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    }
+  ]
 }
