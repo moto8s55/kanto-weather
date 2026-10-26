@@ -1,45 +1,9 @@
 {
-  "generated_at": "2026-10-26T10:37:22.818209+09:00",
+  "generated_at": "2026-10-26T15:56:36.024604+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "7時25分頃、東武スカイツリーライン 小菅～五反野駅間で、車両点検のため、ダイヤが乱れています。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、東急線、小田急線、東武線、京成線、りんかい線、つくばエクスプレス線、北総線に振替輸送を実施しています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "7時25分頃、東武スカイツリーライン 小菅～五反野駅間で車両点検のため、ダイヤが乱れています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "7時47分頃、西武池袋線 江古田駅でお客様転落のため、ダイヤが乱れています。"
-    }
-  ]
+  "lines": []
 }
