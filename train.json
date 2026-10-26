@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-10-26T15:56:36.024604+09:00",
+  "generated_at": "2026-10-26T22:59:12.150431+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TWR",
+      "railway": "りんかい線",
+      "text": "遅れがでています。これは、JR線内で発生した車内点検の影響です。"
+    }
+  ]
 }
