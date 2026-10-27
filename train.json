@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T08:23:59.675658+09:00",
+  "generated_at": "2026-10-27T11:15:25.198899+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,13 +8,18 @@
   "lines": [
     {
       "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
       "railway": "有楽町線",
       "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "一部の列車に遅れが出ています。"
+      "railway": "半蔵門線",
+      "text": "9時07分頃、東武スカイツリーライン 北千住駅で信号確認のため、東武スカイツリーラインとの直通運転を中止しています。"
     },
     {
       "operator": "TokyoMetro",
