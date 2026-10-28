@@ -1,65 +1,9 @@
 {
-  "generated_at": "2026-10-29T00:19:50.356322+09:00",
+  "generated_at": "2026-10-29T05:23:17.502523+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "18時42分頃、和光市駅で安全確認のため、遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "18時42分頃、有楽町線 和光市駅で安全確認のため、遅れが出ています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "都営浅草線",
-      "text": "浅草線は、京急線内にて発生したお客様混雑のため、ダイヤが乱れています。振替輸送を実施しています。"
-    }
-  ]
+  "lines": []
 }
