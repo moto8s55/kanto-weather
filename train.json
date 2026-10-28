@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:05:14.198629+09:00",
+  "generated_at": "2026-10-28T11:09:01.569592+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,13 +8,18 @@
   "lines": [
     {
       "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "8時25分頃、王子駅で安全確認のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
       "railway": "東西線",
       "text": "7時23分頃、強風のため、遅れが出ています。"
     },
     {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
+      "operator": "Toei",
+      "railway": "都営浅草線",
+      "text": "浅草線は、京急線内にて発生したお客様混雑のため、ダイヤが乱れています。振替輸送を実施しています。"
     }
   ]
 }
