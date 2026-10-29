@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:41:01.831236+09:00",
+  "generated_at": "2026-10-29T20:46:54.916353+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,8 +8,38 @@
   "lines": [
     {
       "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "18時01分頃、赤坂見附駅で信号確認のため、遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "丸ノ内線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "18時32分頃、虎ノ門ヒルズ駅で荷物挟まりのため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "17時48分頃、表参道駅で安全確認のため、ダイヤが乱れています。 この影響で小田急小田原線との直通運転を中止しています。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、東急線、東武線、京成線、小田急線、京王線、つくばエクスプレス線、北総線に振替輸送を実施しています。"
+    },
+    {
+      "operator": "TokyoMetro",
       "railway": "有楽町線",
-      "text": "10時24分頃、副都心線 小竹向原駅で進路の確認のため、一部の列車に遅れが出ています。"
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "18時35分頃、東急田園都市線 たまプラーザ駅で窓ガラス破損のため、ダイヤが乱れています。"
     },
     {
       "operator": "TokyoMetro",
