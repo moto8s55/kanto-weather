@@ -1,25 +1,9 @@
 {
-  "generated_at": "2026-10-30T10:50:25.040622+09:00",
+  "generated_at": "2026-10-30T16:46:20.926927+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "9時11分頃、要町駅でホームドア点検のため、ダイヤが乱れています。"
-    }
-  ]
+  "lines": []
 }
