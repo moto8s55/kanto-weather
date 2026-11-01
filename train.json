@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T23:16:57.542292+09:00",
+  "generated_at": "2026-11-02T03:59:29.547927+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -7,9 +7,54 @@
   ],
   "lines": [
     {
-      "operator": "TWR",
-      "railway": "りんかい線",
-      "text": "JR線との直通運転を中止して、りんかい線内（大崎～新木場間）で折返し運転をおこなっています。これは、JR埼京線　戸田駅で発生した人身事故の影響です。なお、本日はＪＲ埼京線との直通運転は終日中止といたします。また一部の列車に遅れが出ています。"
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "丸ノ内線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "東西線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "ただいまの時間は運行を終了しております。"
     }
   ]
 }
