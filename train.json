@@ -1,9 +1,25 @@
 {
-  "generated_at": "2026-11-04T06:42:47.857068+09:00",
+  "generated_at": "2026-11-04T10:41:10.836043+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "8時18分頃、東武東上線 中板橋駅で踏切内車脱輪のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "8時18分頃、東武東上線 中板橋駅で踏切内車脱輪のため、ダイヤが乱れています。"
+    }
+  ]
 }
