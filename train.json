@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:55:32.393096+09:00",
+  "generated_at": "2026-11-05T17:58:07.863011+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,43 +8,18 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "9時55分頃、田原町駅で、ホームドア点検のため、一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
       "railway": "MarunouchiBranch",
       "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
-      "railway": "東西線",
+      "railway": "南北線",
       "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "6時41分頃、ＪＲ常磐線各駅停車 天王台駅でホームドア点検のため、ダイヤが乱れています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
+      "railway": "丸ノ内線",
       "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TWR",
-      "railway": "りんかい線",
-      "text": "遅れがでています。これは、JR線内で発生したお客さま救護の影響です。"
     }
   ]
 }
