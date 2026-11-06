@@ -1,11 +1,16 @@
 {
-  "generated_at": "2026-11-06T07:41:31.926911+09:00",
+  "generated_at": "2026-11-06T11:50:33.801911+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
   "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "11時14分頃、青山一丁目駅でお客様救護のため、ダイヤが乱れています。"
+    },
     {
       "operator": "TokyoMetro",
       "railway": "有楽町線",
@@ -15,6 +20,16 @@
       "operator": "TokyoMetro",
       "railway": "南北線",
       "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TWR",
+      "railway": "りんかい線",
+      "text": "遅れがでています。これは、JR線内で発生した荷物挟まりの影響です。"
     }
   ]
 }
