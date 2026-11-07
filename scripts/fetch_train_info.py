@@ -53,6 +53,8 @@ RAILWAY_NAMES = {
     "Toei.Mita": "都営三田線",
     "Toei.Shinjuku": "都営新宿線",
     "Toei.Oedo": "都営大江戸線",
+    "Toei.Arakawa": "東京さくらトラム(都電荒川線)",
+    "Toei.NipporiToneri": "日暮里・舎人ライナー",
     "Odakyu.Odawara": "小田急小田原線",
     "Odakyu.Tama": "小田急多摩線",
     "Odakyu.Enoshima": "小田急江ノ島線",
