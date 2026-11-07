@@ -22,14 +22,22 @@ jobs:
       - name: Fetch news headlines
         run: python3 scripts/fetch_news.py
 
+      # 失敗しても他のデータの更新・コミットは続ける(失敗時は前回のtodo.jsonが残る)
+      - name: Fetch to-do list from Notion
+        continue-on-error: true
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PAGE_ID: 4114e00d333e8010873ef50e27890b1f
+        run: python3 scripts/fetch_todo.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet train.json news.json; then
+          if git diff --quiet train.json news.json todo.json; then
             echo "No changes"
           else
-            git add train.json news.json
-            git commit -m "Update train and news data"
+            git add train.json news.json todo.json
+            git commit -m "Update train, news and todo data"
             git push
           fi

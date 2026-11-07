@@ -222,6 +222,7 @@ const REFRESH_INTERVAL_MS = 5 * 60 * 1000; // データ更新間隔(5分)
 
 const NEWS_JSON_URL = "./news.json";
 const TRAIN_JSON_URL = "./train.json";
+const TODO_JSON_URL = "./todo.json";
 const OPERATOR_NAMES = {
   "JR-East": "JR東日本", "TokyoMetro": "東京メトロ", "Toei": "都営地下鉄",
   "Odakyu": "小田急", "Keio": "京王", "Keikyu": "京急", "Keisei": "京成",
@@ -313,18 +314,30 @@ async function fetchTrainParts() {
   }
 }
 
+async function fetchTodoParts() {
+  try {
+    const res = await fetch(TODO_JSON_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    return (data.items || []).map((text) => `TODO　${text}`);
+  } catch (e) {
+    return []; // ToDoは任意の表示なので、取得できなければ何も流さない
+  }
+}
+
 async function buildDisplayText() {
-  const [weatherParts, newsParts, trainParts] = await Promise.all([
+  const [weatherParts, newsParts, trainParts, todoParts] = await Promise.all([
     buildWeatherParts(),
     fetchNewsParts(),
     fetchTrainParts(),
+    fetchTodoParts(),
   ]);
 
   const noticeParts = [
     "運行情報　JR東日本・私鉄各線は下のリンクから公式サイトでご確認ください",
     "データ提供：公共交通オープンデータセンター",
   ];
-  const parts = [...weatherParts, ...newsParts, ...trainParts, ...noticeParts];
+  const parts = [...todoParts, ...weatherParts, ...newsParts, ...trainParts, ...noticeParts];
   return parts.join(SEPARATOR) + SEPARATOR;
 }
 
