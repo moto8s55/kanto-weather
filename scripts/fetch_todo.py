@@ -45,8 +45,11 @@ def unchecked_todo_texts(blocks):
 
 
 def main():
-    token = os.environ["NOTION_TOKEN"]
-    page_id = os.environ["NOTION_PAGE_ID"]
+    # 貼り付け時に混ざりやすい前後の空白・改行や「Bearer 」を取り除く
+    token = os.environ["NOTION_TOKEN"].strip()
+    if token.lower().startswith("bearer "):
+        token = token[7:].strip()
+    page_id = os.environ["NOTION_PAGE_ID"].strip()
 
     try:
         items = unchecked_todo_texts(fetch_blocks(page_id, token))
@@ -54,6 +57,9 @@ def main():
         body = e.read().decode("utf-8", errors="replace")[:200]
         # 失敗時は前回のtodo.jsonを残す(一時的なエラーでリストが空になるのを防ぐ)
         print(f"WARN: failed to fetch Notion page: HTTP {e.code} body={body!r}", file=sys.stderr)
+        if e.code == 401:
+            # 原因切り分け用(長さと先頭4文字のみ。Notionのトークンは通常 ntn_ か secret_ で始まる)
+            print(f"INFO: token length={len(token)} prefix={token[:4]!r}", file=sys.stderr)
         sys.exit(1)
     except Exception as e:
         print(f"WARN: failed to fetch Notion page: {e}", file=sys.stderr)
