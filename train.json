@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T07:49:10.824181+09:00",
+  "generated_at": "2026-11-08T10:54:26.535856+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,8 +8,8 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
+      "railway": "副都心線",
+      "text": "10時22分頃、渋谷駅で荷物挟まりのため、遅れが出ています。"
     }
   ]
 }
