@@ -1,15 +1,9 @@
 {
-  "generated_at": "2026-11-08T10:54:26.535856+09:00",
+  "generated_at": "2026-11-08T17:30:31.429575+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "10時22分頃、渋谷駅で荷物挟まりのため、遅れが出ています。"
-    }
-  ]
+  "lines": []
 }
