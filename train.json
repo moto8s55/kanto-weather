@@ -1,50 +1,9 @@
 {
-  "generated_at": "2026-11-09T19:42:13.440773+09:00",
+  "generated_at": "2026-11-10T06:06:20.176000+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "18時18分頃、大手町駅でお客様救護のため、一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "13時42分頃、小田急小田原線 秦野～渋沢駅間で線路に車進入のため、メトロホームウェイ４５号は、運休となります。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TWR",
-      "railway": "りんかい線",
-      "text": "遅れが出ています。JR埼京線内での安全確認の影響です。"
-    }
-  ]
+  "lines": []
 }
