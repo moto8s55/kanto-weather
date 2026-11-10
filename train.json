@@ -1,9 +1,25 @@
 {
-  "generated_at": "2026-11-10T06:06:20.176000+09:00",
+  "generated_at": "2026-11-10T12:29:48.708272+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "8時26分頃、目黒駅で車両ドア点検のため、一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "Toei",
+      "railway": "都営三田線",
+      "text": "三田線は、08時32分頃、東急線内にて発生したドア点検のため、ダイヤが乱れています。振替輸送を実施しています。"
+    }
+  ]
 }
