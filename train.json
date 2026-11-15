@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-11-15T09:16:56.344324+09:00",
+  "generated_at": "2026-11-15T15:48:13.485238+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    }
+  ]
 }
