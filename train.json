@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-11-18T06:08:41.872349+09:00",
+  "generated_at": "2026-11-18T11:52:40.089454+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "8時23分頃、大手町駅で車両ドア点検のため、遅れが出ています。"
+    }
+  ]
 }
