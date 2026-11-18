@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T11:52:40.089454+09:00",
+  "generated_at": "2026-11-18T19:54:11.807668+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,8 +8,28 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "8時23分頃、大手町駅で車両ドア点検のため、遅れが出ています。"
+      "railway": "丸ノ内線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "19時18分頃、千川駅でお客様トラブルのため、一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "Toei",
+      "railway": "都営新宿線",
+      "text": "新宿線は、19時00分頃、京王新線新宿駅にて発生した信号トラブルのため、ダイヤが乱れています。振替輸送を実施しています。"
     }
   ]
 }
