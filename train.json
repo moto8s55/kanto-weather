@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T19:54:11.807668+09:00",
+  "generated_at": "2026-11-19T04:13:29.357676+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,28 +8,53 @@
   "lines": [
     {
       "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
       "railway": "丸ノ内線",
-      "text": "一部の列車に遅れが出ています。"
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "MarunouchiBranch",
-      "text": "一部の列車に遅れが出ています。"
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "東西線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "有楽町線",
-      "text": "一部の列車に遅れが出ています。"
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "ただいまの時間は運行を終了しております。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "副都心線",
-      "text": "19時18分頃、千川駅でお客様トラブルのため、一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "都営新宿線",
-      "text": "新宿線は、19時00分頃、京王新線新宿駅にて発生した信号トラブルのため、ダイヤが乱れています。振替輸送を実施しています。"
+      "text": "ただいまの時間は運行を終了しております。"
     }
   ]
 }
