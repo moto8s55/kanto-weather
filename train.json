@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T08:55:01.395608+09:00",
+  "generated_at": "2026-11-20T14:42:19.406349+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,33 +8,8 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
       "railway": "有楽町線",
       "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "都営浅草線",
-      "text": "浅草線は、京急線内にて発生したお客様混雑のため、押上駅方面行列車のダイヤが乱れています。"
     }
   ]
 }
