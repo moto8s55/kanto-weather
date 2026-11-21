@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T11:57:53.188851+09:00",
+  "generated_at": "2026-11-21T19:48:56.615811+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,23 +8,13 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
+      "railway": "有楽町線",
       "text": "一部の列車に遅れが出ています。"
     },
     {
       "operator": "TokyoMetro",
       "railway": "副都心線",
-      "text": "9時22分頃、東武東上線 朝霞駅でお客様救護のため、ダイヤが乱れています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "東京さくらトラム(都電荒川線)",
-      "text": "東京さくらトラム（都電荒川線）は、お客様混雑のため、ダイヤが乱れています。"
+      "text": "一部の列車に遅れが出ています。"
     }
   ]
 }
