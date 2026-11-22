@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T19:12:36.014332+09:00",
+  "generated_at": "2026-11-23T02:50:58.127794+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -7,9 +7,54 @@
   ],
   "lines": [
     {
-      "operator": "Toei",
-      "railway": "都営新宿線",
-      "text": "新宿線は、17時01分頃、京王線内にて発生した人身事故のため、ダイヤが乱れています。振替輸送を実施しています。"
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "丸ノ内線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "東西線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "ただいまの時間は運行を終了しております。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "ただいまの時間は運行を終了しております。"
     }
   ]
 }
