@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-11-22T07:27:48.805158+09:00",
+  "generated_at": "2026-11-22T11:32:53.640935+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "一部の列車に遅れが出ています。"
+    }
+  ]
 }
