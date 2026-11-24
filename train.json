@@ -1,60 +1,9 @@
 {
-  "generated_at": "2026-11-24T19:49:50.256951+09:00",
+  "generated_at": "2026-11-25T05:54:07.056884+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "銀座線",
-      "text": "混雑のため、ダイヤが乱れています。  只今、東京メトロ線、都営地下鉄線、ＪＲ線、東急線、東武線、京成線、小田急線、京王線、つくばエクスプレス線に振替輸送を実施しています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "丸ノ内線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "MarunouchiBranch",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "日比谷線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "千代田線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "有楽町線",
-      "text": "19時00分頃、有楽町駅でお客様救護のため、遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "半蔵門線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "TokyoMetro",
-      "railway": "副都心線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "東京さくらトラム(都電荒川線)",
-      "text": "東京さくらトラム（都電荒川線）は、お客様混雑のため、ダイヤが乱れています。"
-    }
-  ]
+  "lines": []
 }
