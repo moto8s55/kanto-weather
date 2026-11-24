@@ -1,9 +1,70 @@
 {
-  "generated_at": "2026-11-23T22:20:45.976174+09:00",
+  "generated_at": "2026-11-24T10:01:33.266196+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "丸ノ内線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "日比谷線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "東西線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "千代田線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "8時11分頃、護国寺駅でお客様救護のため、ダイヤが乱れています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "半蔵門線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "南北線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "Toei",
+      "railway": "都営浅草線",
+      "text": "浅草線は、お客様混雑のため、ダイヤが乱れています。振替輸送を実施しています。"
+    },
+    {
+      "operator": "TWR",
+      "railway": "りんかい線",
+      "text": "遅れが出ています。JR埼京線内での急病人救護の影響です。"
+    }
+  ]
 }
