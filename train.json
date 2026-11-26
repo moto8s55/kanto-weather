@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T23:25:42.138590+09:00",
+  "generated_at": "2026-11-27T08:11:09.734967+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
@@ -8,8 +8,13 @@
   "lines": [
     {
       "operator": "TokyoMetro",
-      "railway": "東西線",
-      "text": "21時13分頃、神楽坂駅でお客様トラブルのため、一部の列車に遅れが出ています。"
+      "railway": "丸ノ内線",
+      "text": "7時41分頃、新宿三丁目駅で荷物挟まりのため、遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "MarunouchiBranch",
+      "text": "7時41分頃、新宿三丁目駅で荷物挟まりのため、遅れが出ています。"
     }
   ]
 }
