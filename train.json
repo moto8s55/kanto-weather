@@ -1,20 +1,9 @@
 {
-  "generated_at": "2026-11-26T07:52:43.969936+09:00",
+  "generated_at": "2026-11-26T13:37:01.153193+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": [
-    {
-      "operator": "TokyoMetro",
-      "railway": "南北線",
-      "text": "一部の列車に遅れが出ています。"
-    },
-    {
-      "operator": "Toei",
-      "railway": "都営三田線",
-      "text": "三田線は、06時48分頃、新高島平駅にて発生した安全確認のため、目黒駅方面行列車のダイヤが乱れています。"
-    }
-  ]
+  "lines": []
 }
