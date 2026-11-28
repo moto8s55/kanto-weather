@@ -1,9 +1,25 @@
 {
-  "generated_at": "2026-11-28T08:14:52.364404+09:00",
+  "generated_at": "2026-11-28T13:45:16.731136+09:00",
   "covered": [
     "TokyoMetro",
     "Toei",
     "TWR"
   ],
-  "lines": []
+  "lines": [
+    {
+      "operator": "TokyoMetro",
+      "railway": "銀座線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "有楽町線",
+      "text": "一部の列車に遅れが出ています。"
+    },
+    {
+      "operator": "TokyoMetro",
+      "railway": "副都心線",
+      "text": "9時37分頃、東急東横線 菊名～妙蓮寺駅間で踏切安全確認のため、ダイヤが乱れています。"
+    }
+  ]
 }
